@@ -4,7 +4,6 @@ let index = 0;
 function showSlide() {
   slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
 
-  // Animate hero text each slide change
   const heroContent = document.querySelector('.hero-content');
   heroContent.classList.remove('animate');
   void heroContent.offsetWidth; // restart animation
