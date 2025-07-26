@@ -1,4 +1,3 @@
-// Hero slideshow loop
 let slides = document.querySelectorAll('.slideshow .slide');
 let index = 0;
 
@@ -16,7 +15,7 @@ function showSlide() {
 showSlide();
 setInterval(showSlide, 5000);
 
-// Appointment form
+// Appointment form message
 document.getElementById('registerForm').addEventListener('submit', function(e) {
     e.preventDefault();
     document.getElementById('form-message').textContent = "Thank you! We will contact you soon.";
