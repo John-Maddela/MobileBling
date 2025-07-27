@@ -28,7 +28,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 20, 30, 0.55); /* slightly stronger for readability */
+  background: rgba(10, 20, 30, 0.55);
   z-index: 2; /* sits below the text */
 }
 
@@ -85,12 +85,12 @@
   to { opacity: 1; }
 }
 
-/* Card Hover Effect */
+/* Card Hover Effect - ZOOM */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -143,7 +143,6 @@ footer {
 }
 
 /* AOS Animate On Scroll (already loaded via CDN in HTML) */
-/* Example: You can override AOS defaults if desired */
 [data-aos] {
   transition-property: transform, opacity;
 }
