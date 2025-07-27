@@ -25,13 +25,14 @@
         <li class="nav-item"><a class="nav-link" href="buy-sell.html">Buy & Sell</a></li>
         <li class="nav-item"><a class="nav-link" href="#carriers">Carriers</a></li>
         <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Carousel with Overlay Content -->
+<!-- Hero Section using Bootstrap Carousel -->
 <header id="home" class="hero position-relative">
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
@@ -51,6 +52,14 @@
         <img src="./images/hero5.jpg?v=3" class="d-block w-100" alt="Hero 5">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content text-center text-white px-3">
@@ -59,21 +68,6 @@
     <a href="#appointment" class="btn btn-light btn-lg mt-3 hero-btn">Book Your Appointment</a>
   </div>
 </header>
-
-<!-- Appointment (moved lower) -->
-<section id="appointment" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Book an Appointment</h2>
-    <form id="registerForm" class="mx-auto bg-white p-4 shadow rounded" style="max-width: 600px;" data-aos="fade-up">
-      <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-      <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-      <input type="tel" class="form-control mb-3" placeholder="Phone Number" required>
-      <textarea class="form-control mb-3" placeholder="Issue or Request"></textarea>
-      <button type="submit" class="btn btn-primary w-100">Submit</button>
-    </form>
-    <p id="form-message" class="text-center mt-3"></p>
-  </div>
-</section>
 
 <!-- Services -->
 <section id="services" class="py-5 bg-light">
@@ -99,6 +93,40 @@
           <i class="fas fa-screwdriver-wrench fa-3x text-primary mb-3"></i>
           <h5>Diagnostics</h5>
           <p>Free diagnostics to quickly find and fix issues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Buy & Sell -->
+<section id="buy-sell" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">We Buy & Sell Phones</h2>
+    <p class="lead mb-5" data-aos="fade-up">
+      Upgrade to the latest smartphone or sell your old device for instant cash.  
+      We offer competitive trade-in values and great deals on new and certified pre-owned phones.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card shadow-sm p-4 h-100">
+          <i class="fas fa-dollar-sign fa-3x text-success mb-3"></i>
+          <h5>Sell Your Phone</h5>
+          <p>Get instant cash for your old or unused devices.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card shadow-sm p-4 h-100">
+          <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+          <h5>Buy Certified Phones</h5>
+          <p>Choose from a wide range of certified pre-owned smartphones.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card shadow-sm p-4 h-100">
+          <i class="fas fa-exchange-alt fa-3x text-warning mb-3"></i>
+          <h5>Trade-In</h5>
+          <p>Swap your old device for an upgrade at great value.</p>
         </div>
       </div>
     </div>
