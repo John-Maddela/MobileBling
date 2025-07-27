@@ -1,13 +1,15 @@
+/* ================= HERO SECTION ================= */
+
 /* Hero Carousel Image */
-.carousel-inner img {
-  height: 60vh; /* reduced height */
+.hero-img {
+  height: 60vh;
   object-fit: cover;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 60vh; /* reduced height */
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +20,7 @@
 .hero .carousel-inner,
 .hero .carousel-item,
 .hero img {
-  height: 60vh; /* match reduced height */
+  height: 60vh;
 }
 
 /* Dark Overlay */
@@ -28,8 +30,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 20, 30, 0.55);
-  z-index: 2; /* sits below the text */
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
 }
 
 /* Hero Text Container */
@@ -37,9 +39,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 3; /* ensures text is above overlay */
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 2; /* ensures text is above overlay */
   color: #fff;
   width: 100%;
   max-width: 700px;
@@ -52,13 +54,13 @@
   font-weight: 700;
   margin-bottom: 1rem;
   animation: fadeInDown 1.2s ease-in-out;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.22);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   animation: fadeInUp 1.2s ease-in-out;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.22);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
 
 /* Hero Button */
@@ -69,21 +71,23 @@
   animation: fadeIn 1.4s ease-in-out;
 }
 
-/* Animations */
+/* ================= ANIMATIONS ================= */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Card Hover Effect - ZOOM */
+/* ================= CARD HOVER ================= */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -92,24 +96,19 @@
   box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Product Card Image Height */
+/* ================= PRODUCT CARD IMAGE ================= */
 .product-card img {
   height: 250px;
   object-fit: cover;
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Navbar Link Hover */
+/* ================= NAVBAR HOVER ================= */
 .navbar .nav-link:hover {
   color: #0d6efd;
   font-weight: 500;
 }
 
-/* Buttons */
+/* ================= BUTTON STYLING ================= */
 .btn-primary {
   background-color: #0d6efd;
   border-color: #0d6efd;
@@ -119,28 +118,33 @@ html {
   border-color: #084298;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
   font-size: 0.9rem;
 }
 
-/* Responsive Adjustments */
+/* ================= RESPONSIVE ADJUSTMENTS ================= */
 @media (max-width: 768px) {
-  .hero .hero-title {
+  .hero-title {
     font-size: 1.8rem;
   }
-  .hero .hero-subtitle {
+  .hero-subtitle {
     font-size: 1rem;
   }
-  .carousel-inner img,
+  .hero-img,
   .hero .carousel-inner,
   .hero .carousel-item,
   .hero img {
-    height: 40vh; /* mobile reduced height */
+    height: 40vh;
   }
 }
 
-/* AOS Animate On Scroll (already loaded via CDN in HTML) */
+/* ================= SMOOTH SCROLL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= AOS TRANSITIONS ================= */
 [data-aos] {
   transition-property: transform, opacity;
 }
