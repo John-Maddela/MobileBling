@@ -47,6 +47,11 @@
   animation: fadeIn 1.4s ease-in-out;
 }
 
+
+.hero {
+  position: relative;
+}
+
 /* Animations */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translate(-50%, -60%); }
