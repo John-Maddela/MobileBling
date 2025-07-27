@@ -1,4 +1,4 @@
-/* Hero Section */
+/* ================= Hero Section ================= */
 .hero {
   position: relative;
   height: 90vh;
@@ -30,22 +30,33 @@
 }
 
 .hero-content .hero-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 .hero-content .hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  animation: fadeInUp 1.2s ease-in-out;
 }
 
-/* Scroll animation (AOS) */
+/* Keyframe Animations for Hero Text */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translate(-50%, -60%); }
+  100% { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translate(-50%, -40%); }
+  100% { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* ================= AOS Animation General ================= */
 [data-aos] {
   transition: all 0.6s ease-in-out !important;
 }
 
-/* Cards hover */
+/* ================= Cards Hover ================= */
 .product-card:hover,
 .card:hover {
   transform: translateY(-5px);
@@ -53,7 +64,40 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Navbar spacing fix */
+/* ================= Navbar Fix ================= */
 body {
   padding-top: 70px;
+}
+
+/* ================= Product Images ================= */
+.product-card img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* ================= Footer ================= */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* ================= Buttons ================= */
+.btn-primary, .btn-light {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Section Titles ================= */
+section h2 {
+  font-weight: 700;
+}
+
+/* ================= Map Container ================= */
+.map-container iframe {
+  border-radius: 10px;
 }
