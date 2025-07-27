@@ -1,13 +1,13 @@
 /* Hero Carousel Image */
 .carousel-inner img {
-  height: 90vh;
+  height: 60vh; /* reduced height */
   object-fit: cover;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 60vh; /* reduced height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
 .hero .carousel-inner,
 .hero .carousel-item,
 .hero img {
-  height: 90vh;
+  height: 60vh; /* match reduced height */
 }
 
 /* Dark Overlay */
@@ -48,7 +48,7 @@
 
 /* Hero Text Styling */
 .hero-title {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   animation: fadeInDown 1.2s ease-in-out;
@@ -56,7 +56,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   animation: fadeInUp 1.2s ease-in-out;
   text-shadow: 0 2px 16px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.22);
 }
@@ -74,12 +74,10 @@
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -129,7 +127,7 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .hero .hero-subtitle {
     font-size: 1rem;
@@ -138,7 +136,7 @@ footer {
   .hero .carousel-inner,
   .hero .carousel-item,
   .hero img {
-    height: 45vh;
+    height: 40vh; /* mobile reduced height */
   }
 }
 
