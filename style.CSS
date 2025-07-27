@@ -1,3 +1,8 @@
+body {
+  padding-top: 70px;
+}
+
+/* Hero overlay and content */
 .hero .hero-overlay {
   position: absolute;
   top: 0;
@@ -7,6 +12,7 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .hero .hero-content {
   position: absolute;
   top: 50%;
@@ -14,7 +20,19 @@
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 .carousel-inner img {
   height: 90vh;
+  object-fit: cover;
+}
+
+/* Appointment Form */
+form {
+  border-radius: 8px;
+}
+
+/* Products */
+.product-card img {
+  height: 250px;
   object-fit: cover;
 }
