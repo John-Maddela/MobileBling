@@ -9,7 +9,7 @@
   z-index: 1;
 }
 
-/* Hero Content */
+/* Hero Content Centered */
 .hero .hero-content {
   position: absolute;
   top: 50%;
@@ -27,7 +27,6 @@
 }
 .hero-subtitle {
   font-size: 1.2rem;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 .hero-btn {
@@ -42,7 +41,13 @@
   object-fit: cover;
 }
 
-/* Mobile Responsive */
+/* Product Card Image */
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .hero-title { font-size: 2rem; }
   .hero-subtitle { font-size: 1rem; }
