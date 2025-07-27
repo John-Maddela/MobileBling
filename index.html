@@ -25,16 +25,15 @@
         <li class="nav-item"><a class="nav-link" href="buy-sell.html">Buy & Sell</a></li>
         <li class="nav-item"><a class="nav-link" href="#carriers">Carriers</a></li>
         <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Carousel -->
+<!-- Hero Carousel with Overlay Content -->
 <header id="home" class="hero position-relative">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./images/hero1.jpg?v=3" class="d-block w-100" alt="Hero 1">
@@ -52,14 +51,6 @@
         <img src="./images/hero5.jpg?v=3" class="d-block w-100" alt="Hero 5">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content text-center text-white px-3">
@@ -68,6 +59,21 @@
     <a href="#appointment" class="btn btn-light btn-lg mt-3 hero-btn">Book Your Appointment</a>
   </div>
 </header>
+
+<!-- Appointment (moved lower) -->
+<section id="appointment" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Book an Appointment</h2>
+    <form id="registerForm" class="mx-auto bg-white p-4 shadow rounded" style="max-width: 600px;" data-aos="fade-up">
+      <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+      <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+      <input type="tel" class="form-control mb-3" placeholder="Phone Number" required>
+      <textarea class="form-control mb-3" placeholder="Issue or Request"></textarea>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+    <p id="form-message" class="text-center mt-3"></p>
+  </div>
+</section>
 
 <!-- Services -->
 <section id="services" class="py-5 bg-light">
