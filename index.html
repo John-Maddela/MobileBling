@@ -31,37 +31,37 @@
     </div>
   </div>
 </nav>
+
 <!-- Hero Section using Bootstrap Carousel -->
 <header id="home" class="hero position-relative">
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./images/hero1.jpg?v=5" class="d-block w-100" alt="Hero 1">
+        <img src="./images/hero1.jpg?v=7" class="d-block w-100" alt="Hero 1">
       </div>
       <div class="carousel-item">
-        <img src="./images/hero2.jpg?v=5" class="d-block w-100" alt="Hero 2">
+        <img src="./images/hero2.jpg?v=7" class="d-block w-100" alt="Hero 2">
       </div>
       <div class="carousel-item">
-        <img src="./images/hero3.jpg?v=5" class="d-block w-100" alt="Hero 3">
+        <img src="./images/hero3.jpg?v=7" class="d-block w-100" alt="Hero 3">
       </div>
       <div class="carousel-item">
-        <img src="./images/hero4.jpg?v=5" class="d-block w-100" alt="Hero 4">
+        <img src="./images/hero4.jpg?v=7" class="d-block w-100" alt="Hero 4">
       </div>
       <div class="carousel-item">
-        <img src="./images/hero5.jpg?v=5" class="d-block w-100" alt="Hero 5">
+        <img src="./images/hero5.jpg?v=7" class="d-block w-100" alt="Hero 5">
       </div>
     </div>
   </div>
 
   <!-- Overlay + Centered Text -->
   <div class="hero-overlay"></div>
-  <div class="hero-content text-center text-white px-3">
+  <div class="hero-content text-center text-white px-3" data-aos="fade-up">
     <h1 class="display-4 fw-bold hero-title">Expert Phone Repairs, Accessories & Trade-Ins</h1>
     <p class="lead hero-subtitle">We also Buy & Sell Phones – Get the best deals today</p>
     <a href="#appointment" class="btn btn-light btn-lg mt-3 hero-btn">Book Your Appointment</a>
   </div>
 </header>
-
 
 <!-- Services -->
 <section id="services" class="py-5 bg-light">
@@ -93,7 +93,7 @@
   </div>
 </section>
 
-<!-- Buy & Sell -->
+<!-- Buy & Sell Info -->
 <section id="buy-sell" class="py-5 bg-white">
   <div class="container text-center">
     <h2 class="fw-bold mb-4" data-aos="fade-up">We Buy & Sell Phones</h2>
@@ -139,8 +139,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!-- Products -->
 <section id="products" class="py-5 bg-light">
@@ -221,7 +219,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
 <script src="script.js"></script>
-<script>AOS.init();</script>
 </body>
 </html>
