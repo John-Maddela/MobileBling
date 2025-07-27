@@ -1,3 +1,4 @@
+/* Hero Overlay */
 .hero .hero-overlay {
   position: absolute;
   top: 0;
@@ -8,6 +9,7 @@
   z-index: 1;
 }
 
+/* Hero Content */
 .hero .hero-content {
   position: absolute;
   top: 50%;
@@ -17,17 +19,32 @@
   z-index: 2;
 }
 
-.hero .hero-content h1,
-.hero .hero-content p {
+/* Hero Text Styling */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-bottom: 20px;
 }
+.hero-btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
 
+/* Carousel Images */
 .carousel-inner img {
   height: 90vh;
   object-fit: cover;
 }
 
-.hero-btn {
-  font-size: 1.2rem;
-  padding: 10px 30px;
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-btn { font-size: 1rem; padding: 10px 25px; }
 }
