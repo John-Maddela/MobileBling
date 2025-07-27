@@ -22,7 +22,6 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <!-- ✅ Redirects to separate page -->
         <li class="nav-item"><a class="nav-link" href="buy-sell.html">Buy & Sell</a></li>
         <li class="nav-item"><a class="nav-link" href="#carriers">Carriers</a></li>
         <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
@@ -33,7 +32,7 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section with Cache-Busting -->
 <header id="home" class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content text-center text-white px-3">
@@ -42,11 +41,11 @@
     <a href="#appointment" class="btn btn-light btn-lg mt-3 hero-btn">Book Your Appointment</a>
   </div>
   <div class="slideshow">
-    <div class="slide" style="background-image: url('images/hero1.jpg');"></div>
-    <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
-    <div class="slide" style="background-image: url('images/hero3.jpg');"></div>
-    <div class="slide" style="background-image: url('images/hero4.jpg');"></div>
-    <div class="slide" style="background-image: url('images/hero5.jpg');"></div>
+    <div class="slide" style="background-image: url('./images/hero1.jpg?v=2');"></div>
+    <div class="slide" style="background-image: url('./images/hero2.jpg?v=2');"></div>
+    <div class="slide" style="background-image: url('./images/hero3.jpg?v=2');"></div>
+    <div class="slide" style="background-image: url('./images/hero4.jpg?v=2');"></div>
+    <div class="slide" style="background-image: url('./images/hero5.jpg?v=2');"></div>
   </div>
 </header>
 
