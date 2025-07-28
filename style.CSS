@@ -42,13 +42,17 @@ body {
 /* Hero Text Content - Above everything */
 .hero-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 90%;
-  max-width: 800px;
+  padding: 1rem;
+  z-index: 20;
   color: white;
 }
 
