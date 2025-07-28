@@ -1,3 +1,8 @@
+/* Body padding for fixed navbar */
+body {
+  padding-top: 76px;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -5,68 +10,188 @@
   overflow: hidden;
 }
 
-/* Carousel Images */
-.hero-img {
+/* Carousel container */
+.hero .carousel-inner {
   height: 60vh;
-  width: 100%;
-  object-fit: cover;
+}
+
+.hero .carousel-item {
+  height: 60vh;
+}
+
+/* Carousel Images - Important: target all possible selectors */
+.hero-img,
+.hero .carousel-inner img,
+.hero .carousel-item img {
+  height: 60vh !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
 
 /* Overlay Background */
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
-  z-index: 1;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0,0,0,0.55) !important;
+  z-index: 10 !important;
 }
 
 /* Overlay Text */
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-  width: 100%;
-  padding: 1rem;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  text-align: center !important;
+  z-index: 20 !important;
+  width: 90% !important;
+  max-width: 800px !important;
+  padding: 1rem !important;
 }
 
 /* Text Style */
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.7) !important;
+  margin-bottom: 1rem !important;
 }
+
 .hero-subtitle {
-  font-size: 1.3rem;
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+  font-size: 1.3rem !important;
+  color: #fff !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.7) !important;
+  margin-bottom: 1.5rem !important;
 }
 
 /* Hero Button */
 .hero-btn {
-  margin-top: 1rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.2rem;
+  margin-top: 1rem !important;
+  padding: 0.7rem 2rem !important;
+  font-size: 1.2rem !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Carousel Controls */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  z-index: 25 !important;
+}
+
+.hero .carousel-control-prev-icon,
+.hero .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 50% !important;
+  padding: 20px !important;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
-    height: 40vh;
+    height: 50vh !important;
   }
-  .hero-img {
-    height: 40vh;
+  
+  .hero .carousel-inner,
+  .hero .carousel-item {
+    height: 50vh !important;
   }
+  
+  .hero-img,
+  .hero .carousel-inner img,
+  .hero .carousel-item img {
+    height: 50vh !important;
+  }
+  
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 2rem !important;
   }
+  
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem !important;
   }
+  
+  .hero-btn {
+    font-size: 1rem !important;
+    padding: 0.6rem 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 45vh !important;
+  }
+  
+  .hero .carousel-inner,
+  .hero .carousel-item {
+    height: 45vh !important;
+  }
+  
+  .hero-img,
+  .hero .carousel-inner img,
+  .hero .carousel-item img {
+    height: 45vh !important;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+/* Additional Styles for other sections */
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Map container */
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+#registerForm {
+  border-radius: 15px;
+}
+
+#registerForm .form-control {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  padding: 12px 15px;
+}
+
+#registerForm .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+#registerForm .btn {
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
 }
