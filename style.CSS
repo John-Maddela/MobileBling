@@ -1,13 +1,14 @@
-/* Force extremely tiny logo */
+/* Force super small logo (3px height) */
 .logo-img {
-  height: 3px !important;
   width: auto !important;
+  height: 3px !important;
   max-height: 3px !important;
+  min-height: 3px !important;
   display: inline-block !important;
   object-fit: contain !important;
 }
 
-/* Remove any Bootstrap padding around it */
+/* Remove extra navbar spacing */
 .navbar-brand {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
