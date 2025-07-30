@@ -1,12 +1,12 @@
-/* ---- Logo Size (Much Smaller) ---- */
+/* ---- Extremely Small Logo (About 10x smaller) ---- */
 .navbar-brand img {
-  height: 28px;  /* really small size */
-  width: auto;   /* maintain aspect ratio */
+  height: 10px;   /* reduced drastically */
+  width: auto;    /* keep aspect ratio */
 }
 
 @media (max-width: 768px) {
   .navbar-brand img {
-    height: 24px; /* smaller for mobile */
+    height: 8px;  /* even smaller for mobile */
   }
 }
 
