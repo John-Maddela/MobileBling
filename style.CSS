@@ -1,14 +1,12 @@
-/* Extremely small logo */
+/* Force tiny logo size regardless of image file size */
 .navbar-brand img {
-  height: 25px !important;  /* previously large, now very tiny */
+  max-height: 15px !important; /* really small */
+  max-width: auto !important;
+  height: 15px !important;
   width: auto !important;
   object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  .navbar-brand img {
-    height: 20px !important; /* smaller for mobile */
-  }
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
