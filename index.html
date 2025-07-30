@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile Bling - Phone Repair, Accessories, Buy & Sell</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Mobile Bling - Expert phone repairs, premium accessories, and buy & sell phone services in Charlotte, NC.">
-  <meta name="keywords" content="phone repair, buy phones, sell phones, mobile accessories, Mobile Bling, Charlotte NC">
+  <meta name="description" content="Mobile Bling - Expert phone repairs, accessories, and buy & sell phones at great prices. Book your appointment today.">
+  <meta name="keywords" content="Mobile Bling, phone repairs, accessories, buy phones, sell phones, trade-in, Charlotte NC">
   <meta name="author" content="Mobile Bling">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Mobile Bling - Phone Repair, Accessories & Trade-Ins">
-  <meta property="og:description" content="Expert phone repairs, premium accessories, and buy & sell phone services in Charlotte, NC.">
-  <meta property="og:image" content="https://www.shopmobilebling.com/images/hero1.jpg">
+  <meta property="og:title" content="Mobile Bling - Phone Repair, Accessories, Buy & Sell">
+  <meta property="og:description" content="Expert phone repairs, premium accessories, and great deals on phones.">
+  <meta property="og:image" content="https://www.shopmobilebling.com/images/logo.png">
   <meta property="og:url" content="https://www.shopmobilebling.com/">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mobile Bling - Phone Repair, Accessories & Trade-Ins">
-  <meta name="twitter:description" content="Expert phone repairs, premium accessories, and buy & sell phone services in Charlotte, NC.">
-  <meta name="twitter:image" content="https://www.shopmobilebling.com/images/hero1.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- Bootstrap, Fonts & AOS -->
+  <title>Mobile Bling - Phone Repair, Accessories, Buy & Sell</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -39,7 +23,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="./images/logo.png" alt="Mobile Bling Logo" class="logo-img">
+      <img src="images/logo.png" alt="Mobile Bling Logo" class="logo-img">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
@@ -48,7 +32,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#buy-sell">Buy & Sell</a></li>
+        <li class="nav-item"><a class="nav-link" href="buy-sell.html">Buy & Sell</a></li>
         <li class="nav-item"><a class="nav-link" href="#carriers">Carriers</a></li>
         <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
@@ -58,42 +42,25 @@
   </div>
 </nav>
 
-<!-- Hero Section using Bootstrap Carousel -->
+<!-- Hero Section -->
 <header id="home" class="hero position-relative">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <!-- Carousel Indicators (Dots Only) -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
     </div>
-
-    <!-- Slides -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/hero1.jpg?v=3" class="d-block w-100" alt="Hero 1">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/hero2.jpg?v=3" class="d-block w-100" alt="Hero 2">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/hero3.jpg?v=3" class="d-block w-100" alt="Hero 3">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/hero4.jpg?v=3" class="d-block w-100" alt="Hero 4">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/hero5.jpg?v=3" class="d-block w-100" alt="Hero 5">
-      </div>
+      <div class="carousel-item active"><img src="./images/hero1.jpg" class="d-block w-100" alt="Hero 1"></div>
+      <div class="carousel-item"><img src="./images/hero2.jpg" class="d-block w-100" alt="Hero 2"></div>
+      <div class="carousel-item"><img src="./images/hero3.jpg" class="d-block w-100" alt="Hero 3"></div>
+      <div class="carousel-item"><img src="./images/hero4.jpg" class="d-block w-100" alt="Hero 4"></div>
+      <div class="carousel-item"><img src="./images/hero5.jpg" class="d-block w-100" alt="Hero 5"></div>
     </div>
   </div>
-
-  <!-- Overlay -->
   <div class="hero-overlay"></div>
-
-  <!-- Text -->
   <div class="hero-content text-center text-white px-3">
     <h1 class="display-4 fw-bold hero-title">Expert Phone Repairs, Accessories & Trade-Ins</h1>
     <p class="lead hero-subtitle">We also Buy & Sell Phones – Get the best deals today</p>
