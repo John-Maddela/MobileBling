@@ -1,10 +1,12 @@
 /* Logo size smaller and responsive */
 .logo-img {
-  height: 40px;
+  height: 28px;  /* decreased further */
   width: auto;
 }
 @media (max-width: 768px) {
-  .logo-img { height: 35px; }
+  .logo-img {
+    height: 24px; /* smaller for mobile */
+  }
 }
 
 /* Hero carousel images */
