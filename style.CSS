@@ -1,14 +1,13 @@
-/* Force tiny logo size regardless of image file size */
+/* Ultra-small logo (3px height) */
 .navbar-brand img {
-  max-height: 15px !important; /* really small */
-  max-width: auto !important;
-  height: 15px !important;
+  height: 3px !important;
   width: auto !important;
+  max-height: 3px !important;
+  max-width: auto !important;
   object-fit: contain;
   display: inline-block;
   vertical-align: middle;
 }
-
 
 /* ---- Hero Section ---- */
 .carousel-inner img {
