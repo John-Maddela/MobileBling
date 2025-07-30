@@ -1,13 +1,18 @@
-/* Ultra-small logo (3px height) */
-.navbar-brand img {
+/* Force extremely tiny logo */
+.logo-img {
   height: 3px !important;
   width: auto !important;
   max-height: 3px !important;
-  max-width: auto !important;
-  object-fit: contain;
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-block !important;
+  object-fit: contain !important;
 }
+
+/* Remove any Bootstrap padding around it */
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 
 /* ---- Hero Section ---- */
 .carousel-inner img {
