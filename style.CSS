@@ -1,6 +1,13 @@
-/* Force hero images to be shorter */
-.carousel-inner img {
-  height: 25vh !important; /* <-- strongly enforced shorter height */
+/* Hero container */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+/* Force hero images to have 16:5 ratio */
+.hero .carousel-item img {
+  width: 100%;
+  aspect-ratio: 16/5; /* force ratio */
   object-fit: cover;
 }
 
@@ -21,6 +28,7 @@
 /* Hero text below image */
 .hero-text-section {
   padding: 1rem 0;
+  text-align: center;
 }
 .hero-text-section h1 {
   font-size: 1.8rem;
@@ -40,10 +48,10 @@
   background-color: #084298;
 }
 
-/* Responsive */
+/* Responsive (mobile smaller ratio) */
 @media (max-width: 768px) {
-  .carousel-inner img {
-    height: 20vh !important; /* smaller for mobile */
+  .hero .carousel-item img {
+    aspect-ratio: 16/4;
   }
   .hero-text-section h1 {
     font-size: 1.4rem;
