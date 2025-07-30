@@ -1,6 +1,6 @@
-/* Hero Carousel Image smaller height */
+/* Force hero images to be shorter */
 .carousel-inner img {
-  height: 40vh; /* reduced height */
+  height: 25vh !important; /* <-- strongly enforced shorter height */
   object-fit: cover;
 }
 
@@ -10,7 +10,7 @@
   display: none !important;
 }
 
-/* Dots size smaller */
+/* Carousel indicators (dots) */
 .carousel-indicators button {
   width: 8px;
   height: 8px;
@@ -18,13 +18,17 @@
   background-color: #fff;
 }
 
-/* Hero text section below image */
+/* Hero text below image */
+.hero-text-section {
+  padding: 1rem 0;
+}
 .hero-text-section h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .hero-text-section p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 .hero-text-section .btn {
   background-color: #0d6efd;
@@ -36,15 +40,15 @@
   background-color: #084298;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .carousel-inner img {
-    height: 30vh;
+    height: 20vh !important; /* smaller for mobile */
   }
   .hero-text-section h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .hero-text-section p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
