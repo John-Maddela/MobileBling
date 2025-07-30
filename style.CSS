@@ -1,69 +1,60 @@
-/* Logo size smaller and responsive */
-.logo-img {
-  height: 28px;  /* decreased further */
-  width: auto;
+/* ---- Logo Size ---- */
+.navbar-brand img {
+  height: 40px;   /* smaller logo size */
+  width: auto;    /* maintain aspect ratio */
 }
+
 @media (max-width: 768px) {
-  .logo-img {
-    height: 24px; /* smaller for mobile */
+  .navbar-brand img {
+    height: 32px; /* even smaller on mobile */
   }
 }
 
-/* Hero carousel images */
+/* ---- Hero Section ---- */
 .carousel-inner img {
-  height: 70vh;
-  object-fit: cover;
+  height: 55vh;        /* smaller height */
+  object-fit: cover;   /* cover full width */
 }
 
-/* Remove arrows from carousel */
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
+.hero {
+  position: relative;
+  height: 55vh;
 }
 
-/* Carousel indicators styling */
-.carousel-indicators [data-bs-target] {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.8;
+.hero-content {
+  position: absolute;
+  bottom: 20px;         /* place text below image */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
 }
-.carousel-indicators .active {
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* ---- Book Button (Blue) ---- */
+.hero-btn {
   background-color: #0d6efd;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
 }
 
-/* Hero text below carousel */
-.hero-below-text {
-  background: #f8f9fa;
-}
-.hero-below-text h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.hero-below-text p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Appointment button */
-.hero-below-text .btn-primary {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-}
-.hero-below-text .btn-primary:hover {
+.hero-btn:hover {
   background-color: #084298;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-  .carousel-inner img {
-    height: 40vh;
-  }
-  .hero-below-text h1 {
-    font-size: 1.5rem;
-  }
-  .hero-below-text p {
-    font-size: 1rem;
-  }
+  color: #fff;
 }
